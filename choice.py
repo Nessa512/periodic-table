@@ -1,4 +1,5 @@
 from reader import reader_csv
+import os
 
 #Creating list to periodic table
 list_periodic_table = list()
@@ -7,18 +8,14 @@ list_periodic_table = list()
 reader = reader_csv()
 for line in reader:
     list_periodic_table.append(line)
-"""
-elements = []
-symbols = []
-atomic_weights = []
-phases = []
-electron_configs = [] 
-"""
 
 #Analizing answer
 def get_option(n_answer):
     if n_answer == 1:
-        option1()
+        nAtomic = int(input("Número Atômico: "))
+        print_result(nAtomic)
+        input("Aperte qualquer coisa para voltar...\n\n")
+        print("\x1b[2J")
     elif n_answer == 2:
         pass
     elif n_answer == 3:
@@ -32,12 +29,9 @@ def get_option(n_answer):
     elif n_answer == 0:
         pass
     
-def option1():
-    nAtomic = int(input("Número Atômico: "))
-    print_result(nAtomic)
-
 def print_result(value):
     print(f"""
+          
     Número Atômico: {list_periodic_table[value - 1][0]}
     Nome do Elemento: {list_periodic_table[value - 1][1]}
     Símbolo: {list_periodic_table[value - 1][2]}

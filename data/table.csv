@@ -1,0 +1,119 @@
+Atomic Number,Element,Symbol,Atomic Weight,Phase,Electron Configuration
+1,Hidrogênio,H,1.00794,gás,1s1
+2,Hélio,He,4.002602,gás,1s2
+3,Lítio,Li,6941,sólido,[He] 2s1
+4,Berílio,Be,9.012182,sólido,[He] 2s2
+5,Boro,B,10811,sólido,[He] 2s2 2p1
+6,Carbono,C,12.0107,sólido,[He] 2s2 2p2
+7,Nitrogênio,N,14.0067,gás,[He] 2s2 2p3
+8,Oxigênio,O,15.9994,gás,[He] 2s2 2p4
+9,Flúor,F,18.9984032,gás,[He] 2s2 2p5
+10,Neônio,Ne,20.1797,gás,[He] 2s2 2p6
+11,Sódio,Na,22.98976928,sólido,[Ne] 3s1
+12,Magnésio,Mg,24305,sólido,[Ne] 3s2
+13,Alumínio,Al,26.9815386,sólido,[Ne] 3s2 3p1
+14,Sílicio,Si,28.0855,sólido,[Ne] 3s2 3p2
+15,Fósforo,P,30.973762,sólido,[Ne] 3s2 3p3
+16,Enxofre,S,32065,sólido,[Ne] 3s2 3p4
+17,Cloro,Cl,35453,gás,[Ne] 3s2 3p5
+18,Argônio,Ar,39948,gás,[Ne] 3s2 3p6
+19,Potássio,K,39.0983,sólido,[Ar] 4s1
+20,Cálcio,Ca,40078,sólido,[Ar] 4s2
+21,Escândio,Sc,44.955912,sólido,[Ar] 3d1 4s2
+22,Titânio,Ti,47867,sólido,[Ar] 3d2 4s2
+23,Vanádio,V,50.9415,sólido,[Ar] 3d3 4s2
+24,Crômio,Cr,51.9961,sólido,[Ar] 3d5 4s1
+25,Manganês,Mn,54.938045,sólido,[Ar] 3d5 4s2
+26,Ferro,Fe,55845,sólido,[Ar] 3d6 4s2
+27,Cobalto,Co,58.933195,sólido,[Ar] 3d7 4s2
+28,Níquel,Ni,58.6934,sólido,[Ar] 3d8 4s2
+29,Cobre,Cu,63546,sólido,[Ar] 3d10 4s1
+30,Zinco,Zn,65.38,sólido,[Ar] 3d10 4s2
+31,Gálio,Ga,69723,sólido,[Ar] 3d10 4s2 4p1
+32,Germânio,Ge,72.64,sólido,[Ar] 3d10 4s2 4p2
+33,Arsênio,As,74.9216,sólido,[Ar] 3d10 4s2 4p3
+34,Selênio,Se,78.96,sólido,[Ar] 3d10 4s2 4p4
+35,Bromo,Br,79904,liquído,[Ar] 3d10 4s2 4p5
+36,Criptônio,Kr,83798,gás,[Ar] 3d10 4s2 4p6
+37,Rubídio,Rb,85.4678,sólido,[Kr] 5s1
+38,Estrôncio,Sr,87.62,sólido,[Kr] 5s2
+39,Ítrio,Y,88.90585,sólido,[Kr] 4d1 5s2
+40,Zircônio,Zr,91224,sólido,[Kr] 4d2 5s2
+41,Nióbio,Nb,92.90638,sólido,[Kr] 4d4 5s1
+42,Molibdênio,Mo,95.96,sólido,[Kr] 4d5 5s1
+43,Tecnécio,Tc,98,artificial,[Kr] 4d5 5s2
+44,Rutênio,Ru,101.07,sólido,[Kr] 4d7 5s1
+45,Ródio,Rh,102.9055,sólido,[Kr] 4d8 5s1
+46,Paládio,Pd,106.42,sólido,[Kr] 4d10
+47,Prata,Ag,107.8682,sólido,[Kr] 4d10 5s1
+48,Cádmio,Cd,112411,sólido,[Kr] 4d10 5s2
+49,Índio,In,114818,sólido,[Kr] 4d10 5s2 5p1
+50,Estanho,Sn,118.71,sólido,[Kr] 4d10 5s2 5p2
+51,Antimônio,Sb,121.76,sólido,[Kr] 4d10 5s2 5p3
+52,Telúrio,Te,127.6,sólido,[Kr] 4d10 5s2 5p4
+53,Iodo,I,126.90447,sólido,[Kr] 4d10 5s2 5p5
+54,Xenônio,Xe,131293,gás,[Kr] 4d10 5s2 5p6
+55,Césio,Cs,132.9054519,sólido,[Xe] 6s1
+56,Bário,Ba,137327,sólido,[Xe] 6s2
+57,Lantânio,La,138.90547,sólido,[Xe] 5d1 6s2
+58,Cério,Ce,140116,sólido,[Xe] 4f1 5d1 6s2
+59,Praseodímio,Pr,140.90765,sólido,[Xe] 4f3 6s2
+60,Neodímio,Nd,144242,sólido,[Xe] 4f4 6s2
+61,Promécio,Pm,145,artificial,[Xe] 4f5 6s2
+62,Samário,Sm,150.36,sólido,[Xe] 4f6 6s2
+63,Európio,Eu,151964,sólido,[Xe] 4f7 6s2
+64,Gadolínio,Gd,157.25,sólido,[Xe] 4f7 5d1 6s2
+65,Térbio,Tb,158.92535,sólido,[Xe] 4f9 6s2
+66,Disprócio,Dy,162.5,sólido,[Xe] 4f10 6s2
+67,Hôlmio,Ho,164.93032,sólido,[Xe] 4f11 6s2
+68,Érbio,Er,167259,sólido,[Xe] 4f12 6s2
+69,Túlio,Tm,168.93421,sólido,[Xe] 4f13 6s2
+70,Íterbio,Yb,173054,sólido,[Xe] 4f14 6s2
+71,Lutécio,Lu,174.9668,sólido,[Xe] 4f14 5d1 6s2
+72,Háfnio,Hf,178.49,sólido,[Xe] 4f14 5d2 6s2
+73,Tântalo,Ta,180.94788,sólido,[Xe] 4f14 5d3 6s2
+74,Tungstênio,W,183.84,sólido,[Xe] 4f14 5d4 6s2
+75,Rênio,Re,186207,sólido,[Xe] 4f14 5d5 6s2
+76,Ósmio,Os,190.23,sólido,[Xe] 4f14 5d6 6s2
+77,Irídio,Ir,192217,sólido,[Xe] 4f14 5d7 6s2
+78,Platina,Pt,195084,sólido,[Xe] 4f14 5d9 6s1
+79,Ouro,Au,196.966569,sólido,[Xe] 4f14 5d10 6s1
+80,Mercúrio,Hg,200.59,liquído,[Xe] 4f14 5d10 6s2
+81,Tálio,Tl,204.3833,sólido,[Xe] 4f14 5d10 6s2 6p1
+82,Chumbo,Pb,207.2,sólido,[Xe] 4f14 5d10 6s2 6p2
+83,Bismuto,Bi,208.9804,sólido,[Xe] 4f14 5d10 6s2 6p3
+84,Polônio,Po,210,sólido,[Xe] 4f14 5d10 6s2 6p4
+85,Astato,At,210,sólido,[Xe] 4f14 5d10 6s2 6p5
+86,Radônio,Rn,222,gás,[Xe] 4f14 5d10 6s2 6p6
+87,Frâncio,Fr,223,sólido,[Rn] 7s1
+88,Rádio,Ra,226,sólido,[Rn] 7s2
+89,Actínio,Ac,227,sólido,[Rn] 6d1 7s2
+90,Tório,Th,232.03806,sólido,[Rn] 6d2 7s2
+91,Protactínio,Pa,231.03588,sólido,[Rn] 5f2 6d1 7s2
+92,Urânio,U,238.02891,sólido,[Rn] 5f3 6d1 7s2
+93,Neptúnio,Np,237,artificial,[Rn] 5f4 6d1 7s2
+94,Plutônio,Pu,244,artificial,[Rn] 5f6 7s2
+95,Americio,Am,243,artificial,[Rn] 5f7 7s2
+96,Cúrio,Cm,247,artificial,
+97,Berquélio,Bk,247,artificial,
+98,Calirfónio,Cf,251,artificial,
+99,Einstênio,Es,252,artificial,
+100,Férmio,Fm,257,artificial,
+101,Mendelévio,Md,258,artificial,
+102,Nobélio,No,259,artificial,
+103,Laurêncio,Lr,262,artificial,
+104,Rtuherfórdio,Rf,261,artificial,
+105,Dúbnio,Db,262,artificial,
+106,Seabórgio,Sg,266,artificial,
+107,Bóhrio,Bh,264,artificial,
+108,Hássio,Hs,267,artificial,
+109,Meitnério,Mt,268,artificial,
+110,Darmstádtio,Ds ,271,artificial,
+111,Roentgênio,Rg ,272,artificial,
+112,Copernício,Cn ,285,artificial,
+113,Nihônio,Nh,286,artificial,
+114,Fleróvio,Fl,289,artificial,
+115,Moscóvio ,Mc,288,artificial,
+116,Livermório,Lv,292,artificial,
+117,Tennesso,Ts,295,artificial,
+118,Oganessônio,Og,294,artificial,

@@ -8,4 +8,5 @@ Procurar por:
     [ 4 ] - Massa Atômica
     [ 5 ] - Distribuição Eletrônica
     [ 6 ] - Estado natural
-    [ 0 ] - Sair""")
+    [ 0 ] - Sair
+    """)
