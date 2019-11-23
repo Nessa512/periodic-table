@@ -1,19 +1,10 @@
-import csv
+from menu import show_menu
+from choice import get_option
 
-with open('tabela.csv', 'r') as csv_file:
-    reader = csv.reader(csv_file)
-    next(reader)
-    for nAtomico, nome, simbolo, mAtomica, estadoFisico, configEletronica in reader:
-        print("""
-    Número atômico: {}
-    Nome do elemento: {}
-    Simbolo do elemento: {}
-    Massa atômica: {}
-    Estado físico: {}
-    Distribuição eletrônica: {}
-    """.format(nAtomico,
-               nome,
-               simbolo,
-               mAtomica,
-               estadoFisico,
-               configEletronica))
+answer = None
+
+while answer != 0:
+    show_menu()
+    answer = int(input('--> '))
+    # TODO melhorar filtro por distribuição
+    get_option(answer)
