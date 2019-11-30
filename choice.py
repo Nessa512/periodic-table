@@ -1,12 +1,4 @@
-from reader import reader_csv
-
-#Creating list to periodic table
-list_periodic_table = list()
-
-#Turning object in list
-reader = reader_csv()
-for line in reader:
-    list_periodic_table.append(line)
+from reader import periodic_table
 
 #Analizing answer
 def get_option(n_answer):
@@ -17,12 +9,16 @@ def get_option(n_answer):
         print("\x1b[2J")
     elif n_answer == 2:
         nameElement = str(input("Nome do Elemento: "))
-        nAtomic = return_position(removeCharacteresEspeciais(nameElement.lower()))
+        nAtomic = return_position_by_the_name(removeCharacteresEspeciais(nameElement.lower()))
         print_result(nAtomic)
         input("Aperte Enter para voltar...\n\n")
         print("\x1b[2J")
     elif n_answer == 3:
-        pass
+        symbolElement = str(input("Simbolo do Elemento: "))
+        nAtomic = return_position_by_the_symbol(symbolElement.lower())
+        print_result(nAtomic)
+        input("Aperte Enter para voltar...\n\n")
+        print("\x1b[2J")
     elif n_answer == 4:
         pass
     elif n_answer == 5:
@@ -44,13 +40,25 @@ def print_result(value):
     """)
 
 # Return position of name of element
-def return_position(string_name_element):
+def return_position_by_the_name(string_name_element):
     names_elements = []
     for i in range(0, len(list_periodic_table)):
         names_elements.append(removeCharacteresEspeciais(list_periodic_table[i][1].lower()))
     position_element = names_elements.index(string_name_element)
     return position_element + 1
 
+def return_position_by_the_symbol(string_symbol_element):
+    """
+    symbols_elements = []
+    for i in range(0, len(list_periodic_table)):
+        symbols_elements.append(list_periodic_table[i][2].lower())
+    position_element = symbols_elements.index(string_symbol_element)
+    """
+    for i in range(0, len(list_periodic_table)):
+        if string_symbol_element == list_periodic_table[i][2].lower():
+            position_element
+    return position_element + 1
+    
 #Metod to remove characteres especiais of text
 def removeCharacteresEspeciais(text):
     from unicodedata import normalize
