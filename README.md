@@ -20,10 +20,9 @@ $ sudo pacman -S python3
 ## III - Options to search
 - [x] Number Atomic
 - [x] Name of Element
-- [ ] Symbol
-- [ ] Atomic Weight
+- [x] Symbol
+- [x] Atomic Weight
 - [ ] Electron Configuration
-- [ ] Phase
 
 ## IV - How to execute the script?
 Is very simple, execute the next command:
