@@ -7,6 +7,6 @@ Procurar por:
     [ 3 ] - Símbolo
     [ 4 ] - Massa Atômica
     [ 5 ] - Distribuição Eletrônica
-    [ 6 ] - Estado Físico Natural
+    [ 6 ] - Mostrar todos os elementos
     [ 0 ] - Sair
     """)
