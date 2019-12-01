@@ -24,6 +24,9 @@ $ sudo pacman -S python3
 - [x] Atomic Weight
 - [ ] Electron Configuration
 
+#### Extra
+- [x] Show all elements
+
 ## IV - How to execute the script?
 Is very simple, execute the next command:
 
@@ -31,4 +34,20 @@ Is very simple, execute the next command:
 $ git clone https://github.com/gilmarlnx/periodic-table.git
 $ cd periodic-table
 $ python3 main.py
+```
+
+## V - How will be show?
+
+```
+Procurar por:
+    
+    [ 1 ] - Número Atômico
+    [ 2 ] - Nome do Elemento
+    [ 3 ] - Símbolo
+    [ 4 ] - Massa Atômica
+    [ 5 ] - Distribuição Eletrônica
+    [ 6 ] - Mostrar todos os elementos
+    [ 0 ] - Sair
+    
+-->
 ```
