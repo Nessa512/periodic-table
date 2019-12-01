@@ -1,68 +1,66 @@
 from reader import periodic_table
 
 #Analizing answer
-def get_option(n_answer):
-    if n_answer == 1:
-        nAtomic = int(input("Número Atômico: "))
-        print_result(nAtomic)
-        input("Aperte Enter para voltar...\n\n")
-        print("\x1b[2J")
-    elif n_answer == 2:
-        nameElement = str(input("Nome do Elemento: "))
-        nAtomic = return_position_by_the_name(removeCharacteresEspeciais(nameElement.lower()))
-        print_result(nAtomic)
-        input("Aperte Enter para voltar...\n\n")
-        print("\x1b[2J")
-    elif n_answer == 3:
-        symbolElement = str(input("Simbolo do Elemento: "))
-        nAtomic = return_position_by_the_symbol(symbolElement.lower())
-        print_result(nAtomic)
-        input("Aperte Enter para voltar...\n\n")
-        print("\x1b[2J")
-    elif n_answer == 4:
+def get_option(answer):
+    if answer == 1:
+        n_atomic = int(input("Número atômico: "))
+        print_result(n_atomic)
+    elif answer == 2:
+        name_element = str(input("Nome do elemento: "))
+        n_atomic = return_position_by_the_name(name_element)
+        print_result(n_atomic)
+    elif answer == 3:
+        symbol_element = str(input("Símbolo do elemento: "))
+        n_atomic = return_position_by_the_symbol(symbol_element)
+        print_result(n_atomic)
+    elif answer == 4:
+        atomic_weight_element = float(input("Massa Atômica: "))
+        n_atomic = return_position_by_the_atomic_weight(atomic_weight_element)
+        print_result(n_atomic)
+    elif answer == 5:
         pass
-    elif n_answer == 5:
-        pass
-    elif n_answer == 6:
-        pass
-    elif n_answer == 0:
-        pass
-    
+    elif answer == 6:
+        for i in range(0, len(periodic_table['Atomic Number'])):
+            print_result(i + 1)
+    elif answer == 0:
+        exit()
+
+# Show with base in answer
 def print_result(value):
     print(f"""
-          
-    Número Atômico: {list_periodic_table[value - 1][0]}
-    Nome do Elemento: {list_periodic_table[value - 1][1]}
-    Símbolo: {list_periodic_table[value - 1][2]}
-    Massa Atômica: {list_periodic_table[value - 1][3]}
-    Estado Físico Natural: {list_periodic_table[value - 1][4]}
-    Distribuição Eletrônica: {list_periodic_table[value - 1][5]}
+===================================================
+    Número Atômico: {periodic_table['Atomic Number'][value - 1]}
+    Nome do Elemento: {periodic_table['Element'][value - 1]}
+    Símbolo: {periodic_table['Symbol'][value - 1]}
+    Massa Atômica: {periodic_table['Atomic Weight'][value - 1]}
+    Estado Físico Natural: {periodic_table['Phase'][value - 1]}
+    Distribuição Eletrônica: {periodic_table['Electron Configuration'][value - 1]}
+===================================================
     """)
 
-# Return position of name of element
-def return_position_by_the_name(string_name_element):
-    names_elements = []
-    for i in range(0, len(list_periodic_table)):
-        names_elements.append(removeCharacteresEspeciais(list_periodic_table[i][1].lower()))
-    position_element = names_elements.index(string_name_element)
-    return position_element + 1
-
-def return_position_by_the_symbol(string_symbol_element):
-    """
-    symbols_elements = []
-    for i in range(0, len(list_periodic_table)):
-        symbols_elements.append(list_periodic_table[i][2].lower())
-    position_element = symbols_elements.index(string_symbol_element)
-    """
-    for i in range(0, len(list_periodic_table)):
-        if string_symbol_element == list_periodic_table[i][2].lower():
-            position_element
-    return position_element + 1
-    
-#Metod to remove characteres especiais of text
-def removeCharacteresEspeciais(text):
+def remove_characteres_especials(text):
     from unicodedata import normalize
     return normalize('NFKD', text).encode('ASCII','ignore').decode('ASCII')
+
+def return_position_by_the_name(string_name_element):
+    names = []
+    for number in range(0, len(periodic_table['Element'])):
+        names.append(remove_characteres_especials(periodic_table['Element'][number].lower()))
+    return names.index(string_name_element.lower()) + 1
+
+def return_position_by_the_symbol(string_symbol_element):
+    symbols = []
+    for number in range(0, len(periodic_table['Symbol'])):
+        symbols.append(periodic_table['Symbol'][number].lower())
+    return symbols.index(string_symbol_element.lower()) + 1
+
+def return_position_by_the_atomic_weight(float_atomic_weight_element):
+    atomics_weights = []
+    for number in range(0, len(periodic_table['Atomic Weight'])):
+        atomics_weights.append(round(float(periodic_table['Atomic Weight'][number])))
+    return atomics_weights.index(round(float_atomic_weight_element)) + 1
+
+
 
 
 
