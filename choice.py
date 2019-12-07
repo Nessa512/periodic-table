@@ -19,12 +19,15 @@ def get_option(answer):
         n_atomic = return_position_by_the_atomic_weight(atomic_weight_element)
         print_result(n_atomic)
     elif answer == 5:
-        pass
+        print('Não implementado. Por favor tente mais tarde 😄')
     elif answer == 6:
-        for i in range(0, len(periodic_table['Atomic Number'])):
-            print_result(i + 1)
+		try:
+			for i in range(0, len(periodic_table['Atomic Number'])):
+			    print_result(i + 1)
+		except KeyboardInterrupt:
+			pass
     elif answer == 0:
-        pass
+        print('Bye bye! 👍')
 
 # Show with base in answer
 def print_result(value):
