@@ -7,6 +7,7 @@ def get_option(answer):
         print_result(n_atomic)
     elif answer == 2:
         name_element = str(input("Nome do elemento: "))
+        name_element = remove_characteres_especials(name_element)
         n_atomic = return_position_by_the_name(name_element)
         print_result(n_atomic)
     elif answer == 3:
@@ -23,7 +24,7 @@ def get_option(answer):
         for i in range(0, len(periodic_table['Atomic Number'])):
             print_result(i + 1)
     elif answer == 0:
-        exit()
+        pass
 
 # Show with base in answer
 def print_result(value):
@@ -37,6 +38,8 @@ def print_result(value):
     Distribuição Eletrônica: {periodic_table['Electron Configuration'][value - 1]}
 ===================================================
     """)
+    print("Clique \"ENTER\" para avançar...")
+    input()
 
 def remove_characteres_especials(text):
     from unicodedata import normalize
