@@ -2,11 +2,12 @@
 
 ## I - Requirements to execute the script
 - [x] Python 3.x
+- [x] Git
 
 ## II - Installing requirements
 #### To distributions Linux Debian-based:
 ```
-$ sudo apt-get install python3
+$ sudo apt-get install python3 git
 ```
 #### To distributions Linux Arch-based:
 ```
