@@ -7,11 +7,11 @@
 ## II - Installing requirements
 #### To distributions Linux Debian-based:
 ```
-$ sudo apt-get install python3 git
+$ sudo apt install python3 git
 ```
 #### To distributions Linux Arch-based:
 ```
-$ sudo pacman -S python3
+$ sudo pacman -S python3 git
 ```
 #### To other systems operational, acess the website official of Python:
 
