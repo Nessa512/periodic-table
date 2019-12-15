@@ -3,28 +3,57 @@ from reader import periodic_table
 #Analizing answer
 def get_option(answer):
     if answer == 1:
-        n_atomic = int(input("Número atômico: "))
-        print_result(n_atomic)
+        try:
+            n_atomic = int(input("Número atômico: "))
+            if ((n_atomic > 0) and (n_atomic < 119)):
+                print_result(n_atomic)
+            else:
+                return ValueError
+        except KeyboardInterrupt:
+            pass
+        except ValueError:
+            print(f'Nenhum elemento químico tem número atômico: {n_atomic}')
+            print('0 < nAtomico < 119')
+            input('\"ENTER\" para voltar ao menu...\n')
     elif answer == 2:
-        name_element = str(input("Nome do elemento: "))
-        name_element = remove_characteres_especials(name_element)
-        n_atomic = return_position_by_the_name(name_element)
-        print_result(n_atomic)
+        try:
+            name_element = str(input("Nome do elemento: "))
+            name_element = remove_characteres_especials(name_element)
+            n_atomic = return_position_by_the_name(name_element)
+            print_result(n_atomic)
+        except KeyboardInterrupt:
+            pass
+        except:
+            print(f'Nome \"{name_element.title()}\" não encontrado...')
+            input('\"ENTER\" para voltar ao menu...\n')
     elif answer == 3:
-        symbol_element = str(input("Símbolo do elemento: "))
-        n_atomic = return_position_by_the_symbol(symbol_element)
-        print_result(n_atomic)
+        try:
+            symbol_element = str(input("Símbolo do elemento: "))[:2]
+            n_atomic = return_position_by_the_symbol(symbol_element)
+            print_result(n_atomic)
+        except KeyboardInterrupt:
+            pass
+        except:
+            print(f'Simbolo \"{symbol_element.title()}\" não encontrado...')
+            input('\"ENTER\" para voltar ao menu...\n')
     elif answer == 4:
-        atomic_weight_element = float(input("Massa Atômica: "))
-        n_atomic = return_position_by_the_atomic_weight(atomic_weight_element)
-        print_result(n_atomic)
+        try:
+            atomic_weight_element = float(input("Massa Atômica: "))
+            n_atomic = return_position_by_the_atomic_weight(atomic_weight_element)
+            print_result(n_atomic)
+        except KeyboardInterrupt:
+            pass
+        except:
+            print(f'Nenhum elemento químico tem massa atômica igual a: {atomic_weight_element}')
+            input('\"ENTER\" para voltar ao menu...\n')
     elif answer == 5:
-        pass
-    elif answer == 6:
-        for i in range(0, len(periodic_table['Atomic Number'])):
-            print_result(i + 1)
+        try:
+            for i in range(0, len(periodic_table['Atomic Number'])):
+                print_result(i + 1)
+        except KeyboardInterrupt:
+            pass
     elif answer == 0:
-        pass
+        print('Bye bye! 👍')
 
 # Show with base in answer
 def print_result(value):
@@ -38,8 +67,7 @@ def print_result(value):
     Distribuição Eletrônica: {periodic_table['Electron Configuration'][value - 1]}
 ===================================================
     """)
-    print("Clique \"ENTER\" para avançar...")
-    input()
+    input("Clique \"ENTER\" para avançar...\nCtrl + C para sair...\n")
 
 def remove_characteres_especials(text):
     from unicodedata import normalize
