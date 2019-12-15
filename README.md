@@ -23,7 +23,6 @@ $ sudo pacman -S python3 git
 - [x] Name of Element
 - [x] Symbol
 - [x] Atomic Weight
-- [ ] Electron Configuration
 
 #### Extra
 - [x] Show all elements
