@@ -45,8 +45,7 @@ Procurar por:
     [ 2 ] - Nome do Elemento
     [ 3 ] - Símbolo
     [ 4 ] - Massa Atômica
-    [ 5 ] - Distribuição Eletrônica
-    [ 6 ] - Mostrar todos os elementos
+    [ 5 ] - Mostrar todos os elementos
     [ 0 ] - Sair
     
 -->
