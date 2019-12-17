@@ -53,11 +53,11 @@ def get_option(answer):
         except KeyboardInterrupt:
             pass
     elif answer == 6:
-		try:
-			for i in range(0, len(periodic_table['Atomic Number'])):
-			    print_result(i + 1)
-		except KeyboardInterrupt:
-			pass
+        try:
+            for i in range(0, len(periodic_table['Atomic Number'])):
+                print_result(i + 1)
+        except KeyboardInterrupt:
+            pass
     elif answer == 0:
         print('Bye bye! 👍')
 
