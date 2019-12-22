@@ -1,7 +1,7 @@
 periodic_table = {}
 map_index_to_column = {}
 
-csv_file = open("./data/table.csv", "r")
+csv_file = open("./data/table.csv", "r", encoding="utf-8")
 text_lines = csv_file.read().splitlines()
 header, body = text_lines[0], text_lines[1:]
 
