@@ -1,14 +1,17 @@
-#!/usr/bin/python3
+﻿#!/usr/bin/python3
 # :()
 from menu import show_menu
 from choice import get_option
 import os
-import sys
+
+CLEAR_SCREEN_DOS = 'cls'
+CLEAR_SCREEN_UNIX = 'clear'
 
 def clear_screen():
-	os.system('clear')
-
-
+	if os.name == 'nt':
+		os.system(CLEAR_SCREEN_DOS)
+	else:
+		os.system(CLEAR_SCREEN_UNIX)
 answer = None
 
 while answer != 0:
