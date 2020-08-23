@@ -31,7 +31,7 @@ $ sudo pacman -S python3 git
 Is very simple, execute the next command:
 
 ```
-$ git clone https://github.com/gilmarlnx/periodic-table.git
+$ git clone https://github.com/gilmarodp/periodic-table.git
 $ cd periodic-table
 $ python3 main.py
 ```
